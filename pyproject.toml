@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "pybyd"
 #dynamic = ["version"]
-version = "0.0.49"
+version = "0.0.49.1"
 description = "Async Python client for BYD vehicle telemetry API"
 requires-python = ">=3.11"
 license = "MIT"
