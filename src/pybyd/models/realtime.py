@@ -196,6 +196,7 @@ _KEY_ALIASES: dict[str, str] = {
     "abs": "absWarning",
     "time": "timestamp",
     "recent50kmEnergy": "recent50KmEnergy",
+    "rate": "power"
 }
 
 
@@ -241,6 +242,8 @@ class VehicleRealtimeData(BydBaseModel):
     """V2 odometer field."""
     total_mileage_v2_unit: str | None = None
     """Unit for total_mileage_v2."""
+    power: float | None = None
+    """Instantaneous power (kWh) output/input to the vehicle. Power output is positive, power input is negative (charging)"""
 
     # --- Driving ---
     speed: float | None = None
